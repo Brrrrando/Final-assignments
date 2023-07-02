@@ -16,8 +16,12 @@
 
 
 ## 问题2：设计Transformer网络模型，与期中作业1的结果对比
-
-
+epoch:70
+alpha:0.5
+Cutmix_prob:0.3
+lr:1e-4
+Weight_decay:1e-3
+batch_size:128
 
 ## 问题3：使用具有泛化能力的NeRF 模型进行三维物体重建
 所需环境：
@@ -35,4 +39,3 @@ colmap下载地址：https://github.com/colmap/colmap/releases
 2、将收集好的数据集放在nerf-pytorch\data\nerf_llff_data\CrystalIO\images该目录下
 3、利用colmap对数据集提取特征点并输出结果、配准并重建
 4、运行nerf模型（run_nerf.py）训练并输出重建结果，结果保存在nerf-pytorch\logs\CrystalIO目录下
-5、github上传的模型因为文件数量限制有所删减，如果运行有问题的话可以用百度网盘的那个
